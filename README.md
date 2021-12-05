@@ -58,4 +58,4 @@ Scale: 1 unit = 1 m
 
 # License
 
-The datasets are owned by the respective authors. However, the results were generated using our algorithms.
+The datasets are owned by the respective authors. However, the results were generated using our algorithms. The results should be used only for the purpose of benchmarking.
