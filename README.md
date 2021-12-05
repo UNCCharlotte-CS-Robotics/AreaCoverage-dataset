@@ -7,12 +7,14 @@ It also contains the results using our algorithm for the Area Coverage problem. 
 > “Area Coverage Problem with Multiple Capacity-Constrained Robots,”
 > IEEE Robotics and Automation Letters, 2021 (under review).
 
-### Description of files:
+### Description of common files:
 
 - `outer_polygon`: Points for the outer polygon.
 - `holes`: Points for the hole (obstacle) polygons.
 - `robot_polygon`: Points describing the robot.
 - `graph.png:` Environment and service tracks.
+- `mem_<description>_route.png`: Routes generated using our algorithm.
+- `mem_<description>_route_data<route_nuumber>`: File containing route using our algorithm. The first two columns are the coordinates, and the last column states whether the travel to the point is servicing or deadheading.
 
 # Description of the Datasets
 
@@ -31,11 +33,12 @@ A dataset of 25 indoor environments for coverage using ground robots. The datase
 Scale: 1 unit = .1 m
 
 - `env_<num>.wkt`: The original environment data in WKT format as given by Isaac Vandermeulen.
-- `mem_r<num>`: Folder containing our results for `<num`> robots.
-- `mem_r<num>_route.png`: Routes generated using our algorithm.
-- `mem_r<num>_route_data`: File containing route using our algorithm. The first two columns are the coordinates, and the last column states whether the travel to the point is servicing or deadheading.
 
-### `AC300 dataset`
+- `mem_r<num>`: Folder containing our results for `<num`> robots.
+
+  
+
+### `AC300` dataset
 
 A dataset of 300 outdoor environments using aerial robots. The dataset is part of the installation from the source code available at https://github.com/ethz-asl/polygon_coverage_planning. The environments have been converted to our format. The original dataset can be obtained from https://polybox.ethz.ch/index.php/s/7J5HPRR6lM22TnK/download. The dataset is part of the following paper:
 
@@ -43,13 +46,15 @@ A dataset of 300 outdoor environments using aerial robots. The dataset is part o
 > "Revisiting boustrophedon coverage path planning as a generalized traveling salesman problem,"
 > Field and Service Robotics. Springer, Singapore, 2021.
 
-The dataset contains 300 environments with 1--15 holes (obstacles) derived from buildings. The environments are named `AC<#holes>_<#num>`.
+The dataset contains 300 environments with 1--15 holes (obstacles) derived from buildings. The environments are named `AC<#holes>_<#num>`. 
+
+Scale: 1 unit = 1 m
 
 - `mem_inf`: Our solution with a single robot.
+
 - `mem_1200`: Our solution with robots with 1200 s as capacity.
-- `mem_<capacity>_route_data`: File containing route using our algorithm. The first two columns are the coordinates, and the last column states whether the travel to the point is servicing or deadheading.
 
-
+  
 
 # License
 
