@@ -18,6 +18,10 @@ It also contains the results using our algorithm for the Area Coverage problem. 
 
 # Description of the Datasets
 
+### `RAL_main`
+
+The environment used as a running example in the RA-L paper by Agarwal and Akella.
+
 ### `VM25` dataset
 
 A dataset of 25 indoor environments for coverage using ground robots. The dataset was provided by Isaac Vandermeulen. The dataset is part of the following paper:
