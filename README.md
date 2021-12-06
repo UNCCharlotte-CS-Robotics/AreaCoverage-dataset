@@ -58,6 +58,14 @@ Scale: 1 unit = 1 m
 
 - `mem_1200`: Our solution with robots with 1200 s as capacity.
 
+### `H2` dataset
+
+ A dataset with two environments from:
+
+> W. H. Huang, 
+> “Optimal line-sweep-based decompositions for coverage algorithms,”
+> IEEE International Conference on Robotics and Automation (ICRA), 2001
+
   
 
 # License
